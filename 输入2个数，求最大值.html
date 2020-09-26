@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function getArrMax(arr) {
+            var max = [0];
+            for (var i = 1; i < arr.length; i++) {
+                if (arr[i] > max) {
+                    max = arr[i];
+                }
+            }
+            return max;
+        }
+        var reslut = getArrMax([num1 = prompt('请输入第一个值：'), num2 = prompt('请输入第二个值：')]);
+        alert('最大值为：' + reslut);
+        console.log(reslut);
+    </script>
+</body>
+
+</html>

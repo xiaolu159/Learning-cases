@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //1.字面量创建对象
+        var obj = {
+            unmae: '可可',
+            age: 5,
+            type: '阿拉斯加',
+            color: '棕红色',
+
+        }
+
+        //2.利用new Objet创建对象
+
+        var obj = new Object();
+        obj.uname = '鸣人';
+        obj.ages = 19;
+        obj.skill = '影分身术';
+
+        //3.利用构造函数创建对象
+        function Star(uname, age, sex) {
+            this.name = uname;
+            this.age = age;
+            this.sex = sex;
+            this.sing = function(sang) {
+                console.log(sang);
+            }
+        }
+        var ldh = new Star('刘德华', 15, '男');
+        ldh.sing('bingyu');
+    </script>
+</body>
+
+</html>

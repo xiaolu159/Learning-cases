@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function getRe(num) {
+            if (num % num == 0 && num % 1 == 0) {
+                alert('这个数是素数！');
+            } else {
+                alert('这个数不是素数！');
+            }
+
+        }
+        var reslut = getRe(num = parseFloat(prompt('请输入一个数：')));
+
+        console.log(reslut);
+    </script>
+</body>
+
+</html>

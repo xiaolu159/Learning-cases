@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="new\images\sun.jpg" alt="">
+    <script>
+        var pic = document.querySelector('img');
+        document.addEventListener('mousemove', function(e) {
+            //1.muosemove 只要我们鼠标移动1px 就会触发事件
+            //2.核心原理 ： 每次鼠标移动 我们都会获得最新的鼠标坐标 把这个x和y坐标作为图片的top和left值 就可以让图片移动
+            var x = e.pageX;
+            var y = e.pageY;
+            pic.style.left = x + 'px';
+            pic.style.top = y + 'px';
+        });
+    </script>
+</body>
+
+</html>

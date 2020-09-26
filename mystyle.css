@@ -1,0 +1,46 @@
+.tab {
+    margin: 100px auto;
+    width: 1000px;
+    height: 200px;
+}
+
+.tab_list {
+    height: 39px;
+    background-color: rgb(230, 228, 231);
+    border: 1px solid rgb(216, 214, 218);
+}
+
+.tab_list ul {
+    height: 39px;
+}
+
+.tab_list ul li {
+    list-style: none;
+    float: left;
+    text-align: center;
+    height: 39px;
+    line-height: 39px;
+    font-size: 14px;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+.tab_con {
+    width: 800px;
+    height: 170px;
+}
+
+.tab_list .current {
+    background-color: #c81623;
+    color: white;
+}
+
+.item {
+    padding: 0 20px;
+    display: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}

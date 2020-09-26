@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .table {
+            margin: 50px auto;
+        }
+        
+        .head {
+            background-color: cadetblue;
+            font-weight: 700;
+        }
+        
+        .head td {
+            width: 150px;
+            margin: auto;
+        }
+        
+        .body td {
+            color: cornflowerblue;
+            font-size: 14px;
+            border-bottom: 1px solid #000;
+        }
+        
+        .bg {
+            background-color: rgb(29, 230, 230);
+        }
+    </style>
+</head>
+
+<body>
+    <table class="table">
+        <thead class="head">
+            <tr>
+                <td>代码</td>
+                <td>净值</td>
+                <td>净值</td>
+                <td>净值</td>
+                <td>净值</td>
+                <td>净值</td>
+            </tr>
+        </thead>
+        <tbody class="body">
+            <tr>
+                <td>003562</td>
+                <td>大苏打是的阿斯顿</td>
+                <td>0.045</td>
+                <td>0.051564</td>
+                <td>1.45</td>
+                <td>+0.048%</td>
+            </tr>
+
+            <tr>
+                <td>003562</td>
+                <td>大苏打是的阿斯顿</td>
+                <td>0.045</td>
+                <td>0.051564</td>
+                <td>1.45</td>
+                <td>+0.048%</td>
+            </tr>
+
+            <tr>
+                <td>003562</td>
+                <td>大苏打是的阿斯顿</td>
+                <td>0.045</td>
+                <td>0.051564</td>
+                <td>1.45</td>
+                <td>+0.048%</td>
+            </tr>
+
+            <tr>
+                <td>003562</td>
+                <td>大苏打是的阿斯顿</td>
+                <td>0.045</td>
+                <td>0.051564</td>
+                <td>1.45</td>
+                <td>+0.048%</td>
+            </tr>
+
+            <tr>
+                <td>003562</td>
+                <td>大苏打是的阿斯顿</td>
+                <td>0.045</td>
+                <td>0.051564</td>
+                <td>1.45</td>
+                <td>+0.048%</td>
+            </tr>
+
+            <tr>
+                <td>003562</td>
+                <td>大苏打是的阿斯顿</td>
+                <td>0.045</td>
+                <td>0.051564</td>
+                <td>1.45</td>
+                <td>+0.048%</td>
+            </tr>
+
+            <tr>
+                <td>003562</td>
+                <td>大苏打是的阿斯顿</td>
+                <td>0.045</td>
+                <td>0.051564</td>
+                <td>1.45</td>
+                <td>+0.048%</td>
+            </tr>
+        </tbody>
+
+    </table>
+    <script>
+        var trs = document.querySelector('tbody').querySelectorAll('tr');
+        for (var i = 0; i < trs.length; i++) {
+            trs[i].onmouseover = function() {
+                // console.log(11);
+                this.className = 'bg';
+            }
+            trs[i].onmouseout = function() {
+                // console.log(11);
+                this.className = '';
+            }
+        }
+    </script>
+</body>
+
+</html>

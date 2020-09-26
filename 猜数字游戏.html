@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function getRoandom(min, max) {
+            return Math.floor(Math.random() * (max - min)) + min;
+        }
+        var random = getRoandom(1, 50);
+        console.log(getRoandom(1, 50));
+
+
+        for (var i = 5; i >= 1; i--) {
+            var num = (prompt('请输入1-50之间任意数字（只有五次机会）：'));
+            if (num > random) {
+                alert('大了，你还有第' + (i - 1) + '次机会');
+            }
+            if (num < random) {
+                alert('小了，你还有第' + (i - 1) + '次机会');
+            } else {
+                alert('对了');
+                break;
+            }
+
+        }
+    </script>
+</body>
+
+</html>

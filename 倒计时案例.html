@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        div {
+            margin: 100px auto;
+            width: 500px;
+            height: 500px;
+        }
+        
+        span {
+            width: 40px;
+            height: 40px;
+            background-color: cadetblue;
+            text-align: center;
+            line-height: 40px;
+            font-size: 18px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <span class="hour"></span>
+        <span class="minute"></span>
+        <span class="second"></span>
+    </div>
+    <script>
+        var hour = document.querySelector('.hour');
+        var minute = document.querySelector('.minute');
+        var second = document.querySelector('.second');
+        var inputTime = +new Date('2020-8-17 14:52:00');
+        setInterval(countDown, 1000);
+
+        function countDown() {
+            var nowTime = +new Date();
+            var times = (inputTime - nowTime) / 1000;
+            var h = parseInt(times / 60 / 60 % 24);
+            h = h > 10 ? h : '0' + h;
+            hour.innerHTML = h;
+            var m = parseInt(times / 60 % 60);
+            m = m > 10 ? m : '0' + m;
+            minute.innerHTML = m;
+            var s = parseInt(times % 60);
+            s = s > 10 ? s : '0' + s;
+            second.innerHTML = s;
+            return h + ':' + m + ':' + s;
+        }
+    </script>
+</body>
+
+</html>

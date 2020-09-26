@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var str = prompt('请输入运算方式（加法、减法、乘法、除法）:');
+        if (str == '加法') {
+            function getRe(num1, num2) {
+                return num1 + num2;
+            }
+            var reslut = getRe(num1 = parseFloat(prompt('请输入第一个数：')), num2 = parseFloat(prompt('请输入第二个数：')));
+            console.log(reslut);
+            alert('结果是：' + reslut);
+        } else if (str == '减法') {
+            function getRe(num1, num2) {
+                return num1 - num2;
+            }
+            var reslut = getRe(num1 = parseFloat(prompt('请输入第一个数：')), num2 = parseFloat(prompt('请输入第二个数：')));
+            console.log(reslut);
+            alert('结果是：' + reslut);
+        } else if (str == '除法') {
+            function getRe(num1, num2) {
+                return num1 / num2;
+            }
+            var reslut = getRe(num1 = parseFloat(prompt('请输入第一个数：')), num2 = parseFloat(prompt('请输入第二个数：')));
+            console.log(reslut);
+            alert('结果是：' + reslut);
+        } else if (str == '乘法') {
+            function getRe(num1, num2) {
+                return num1 * num2;
+            }
+            var reslut = getRe(num1 = parseFloat(prompt('请输入第一个数：')), num2 = parseFloat(prompt('请输入第二个数：')));
+            console.log(reslut);
+            alert('结果是：' + reslut);
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .tab {
+            margin: 100px auto;
+            width: 800px;
+            height: 300px;
+        }
+        
+        .tab_list {
+            height: 39px;
+            background-color: rgb(230, 228, 231);
+            border: 1px solid rgb(216, 214, 218);
+            border-bottom: 2px solid #c81623;
+        }
+        
+        .tab_list ul li {
+            list-style: none;
+            float: left;
+            text-align: center;
+            height: 39px;
+            line-height: 39px;
+            font-size: 14px;
+            padding: 0 20px;
+            cursor: pointer;
+        }
+        
+        .tab_con {
+            width: 800px;
+            height: 270px;
+        }
+        
+        .tab_list .current {
+            background-color: #c81623;
+            color: white;
+        }
+        
+        .item {
+            display: none;
+        }
+    </style>
+    <script src="js/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="tab">
+        <div class="tab_list">
+            <ul>
+                <li class="current">商品介绍</li>
+                <li>规格与包装</li>
+                <li>售后保障</li>
+                <li>商品评价(500000)</li>
+                <li>手机社区</li>
+            </ul>
+        </div>
+        <div class="tab_con">
+            <div class="item" style="display: block;">商品介绍</div>
+            <div class="item">规格与包装</div>
+            <div class="item">售后保障</div>
+            <div class="item">商品评价(500000)</div>
+            <div class="item">手机社区</div>
+        </div>
+    </div>
+</body>
+<script>
+    $(function() {
+        $(".tab_list li").click(function() {
+            $(this).addClass("current").siblings().removeClass("current");
+            var index = $(this).index();
+            $(".tab_con .item").eq(index).show().siblings().hide();
+        });
+    })
+</script>
+
+</html>
